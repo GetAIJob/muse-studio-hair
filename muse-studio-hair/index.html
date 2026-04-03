@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muse Studio Hair — boutique hair salon in Barcelona. Expert colorists with 12 years of training. Free color consultation before every appointment.">
+  <meta property="og:title" content="Muse Studio Hair — Barcelona Color Specialists">
+  <meta property="og:description" content="Haircuts, color, and specialist treatments with a consultation before every appointment. 12 years of color expertise.">
+  <meta property="og:type" content="website">
+  <title>Muse Studio Hair — Barcelona Color Specialists</title>
+
+  <!-- Preload critical fonts -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:wght@300;400;600&display=swap" as="style">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:wght@300;400;600&display=swap">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- Schema.org SEO Microdata -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "Muse Studio Hair",
+    "image": "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=1200&auto=format&fit=crop",
+    "url": "https://muse-studio-hair.risesitelab.com",
+    "telephone": "+34 93 123 4567",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Carrer de Provença 211",
+      "addressLocality": "Barcelona",
+      "postalCode": "08008",
+      "addressCountry": "ES"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    },
+    "priceRange": "€€€"
+  }
+  </script>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header" id="site-header">
+    <div class="container header__inner">
+      <a href="#" class="logo" aria-label="Muse Studio Hair — home">
+        <span class="logo__name">Muse Studio</span>
+        <span class="logo__sub">Hair</span>
+      </a>
+
+      <nav class="nav" id="desktop-nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#services">Services</a></li>
+          <li><a class="nav__link" href="#gallery">Gallery</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#pricing">Pricing</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#contact" class="btn btn--primary header__cta">Book</a>
+
+      <button
+        class="burger"
+        id="burger"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+        type="button"
+      >
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Nav Overlay -->
+    <nav
+      class="mobile-nav"
+      id="mobile-nav"
+      aria-label="Mobile navigation"
+      aria-hidden="true"
+    >
+      <ul class="mobile-nav__list">
+        <li><a class="mobile-nav__link" href="#services">Services</a></li>
+        <li><a class="mobile-nav__link" href="#gallery">Gallery</a></li>
+        <li><a class="mobile-nav__link" href="#about">About</a></li>
+        <li><a class="mobile-nav__link" href="#pricing">Pricing</a></li>
+        <li><a class="mobile-nav__link" href="#contact">Contact</a></li>
+      </ul>
+      <a href="#contact" class="btn btn--primary mobile-nav__cta">Book a Consultation</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero" aria-label="Hero" style="position: relative; overflow: hidden;">
+      <!-- Background Image -->
+      <div style="position: absolute; inset: 0; z-index: 0;">
+        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=2000&auto=format&fit=crop" alt="" style="width: 100%; height: 100%; object-fit: cover; filter: brightness(0.55);" aria-hidden="true">
+      </div>
+      <!-- Gradient Overlay -->
+      <div style="position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.8)); z-index: 1;"></div>
+
+      <div class="hero__inner container" style="position: relative; z-index: 2; color: #ffffff;">
+        <span class="hero__badge reveal" style="color: #e0c9a6; border-color: rgba(176, 143, 90, 0.6);">Barcelona · Color Specialists</span>
+        <h1 class="hero__heading reveal" style="color: #ffffff;">Your hair, understood before it's touched.</h1>
+        <p class="hero__subtitle reveal" style="color: #cccccc;">Haircuts, color, and specialist treatments — with a consultation before every appointment.</p>
+        <div class="hero__ctas reveal">
+          <a href="#contact" class="btn btn--hero-primary" style="background: #B08F5A; color: #ffffff; border: none;">Book a Color Consultation</a>
+          <a href="#about" class="btn btn--outline" style="border-color: #ffffff; color: #ffffff;">Meet Our Stylists</a>
+        </div>
+        <div class="hero__stats reveal" style="background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); border-radius: 8px; color: #111111;">
+          <div class="hero__stat">
+            <span class="hero__stat-num">12</span>
+            <span class="hero__stat-label">Years of Color Training</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num">800+</span>
+            <span class="hero__stat-label">Color Clients</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num">Free</span>
+            <span class="hero__stat-label">Color Consultation</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="services" id="services" aria-label="Services">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">What We Offer</span>
+          <h2>Every service starts with a conversation</h2>
+        </div>
+
+        <div class="services__grid">
+
+          <article class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                <path d="M9.5 4C9.5 4 10 7 10 9C10 11 8.5 12 7 12C5.5 12 4 11 4 9C4 7.5 5 6.5 5 6.5" stroke="#B08F5A" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M14.5 4C14.5 4 14 7 14 9C14 11 15.5 12 17 12C18.5 12 20 11 20 9C20 7.5 19 6.5 19 6.5" stroke="#B08F5A" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M7 12V20M17 12V20" stroke="#B08F5A" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M7 16H17" stroke="#B08F5A" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Haircut &amp; Styling</h3>
+            <span class="service-card__price">From €65</span>
+            <p class="service-card__desc">Cut and finish for all hair types. We ask about your morning routine before picking up scissors.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                <circle cx="12" cy="12" r="8" stroke="#B08F5A" stroke-width="1.5"/>
+                <path d="M12 4C12 4 9 7 9 12C9 17 12 20 12 20" stroke="#B08F5A" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M12 4C12 4 15 7 15 12C15 17 12 20 12 20" stroke="#B08F5A" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M4 12H20" stroke="#B08F5A" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Color &amp; Highlights</h3>
+            <span class="service-card__price">From €95</span>
+            <p class="service-card__desc">Full color, partial highlights, or root blending — each formulated for your hair's condition and natural tone.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                <path d="M5 20C5 20 7 14 12 14C17 14 19 20 19 20" stroke="#B08F5A" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M8 8C8 8 8 4 12 4C16 4 16 8 16 8" stroke="#B08F5A" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M9 8C9 11 10 14 12 14C14 14 15 11 15 8" stroke="#B08F5A" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Balayage</h3>
+            <span class="service-card__price">From €140</span>
+            <p class="service-card__desc">Hand-painted color that grows out without hard lines. Designed to look natural at 8 weeks and still good at 16.</p>
+          </article>
+
+          <article class="service-card reveal">
+            <div class="service-card__icon" aria-hidden="true">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                <path d="M12 3C12 3 6 6 6 12C6 16 8.5 19 12 20C15.5 19 18 16 18 12C18 6 12 3 12 3Z" stroke="#B08F5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 12C9 13.657 10.343 15 12 15C13.657 15 15 13.657 15 12" stroke="#B08F5A" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <h3 class="service-card__title">Keratin Treatment</h3>
+            <span class="service-card__price">From €180</span>
+            <p class="service-card__desc">Frizz reduction that lasts 3–5 months. We discuss expectations honestly before you commit.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="gallery" id="gallery" aria-label="Gallery">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Our Work</span>
+          <h2>Color that speaks for itself</h2>
+        </div>
+
+        <div class="gallery__grid">
+
+          <figure class="gallery__item reveal">
+            <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?q=80&w=800&auto=format&fit=crop" alt="Before and after balayage transformation on dark brunette hair" width="800" height="600" loading="lazy">
+            <figcaption class="gallery__caption">Balayage Transformation</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal">
+            <img src="https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?q=80&w=800&auto=format&fit=crop" alt="Warm honey highlights on medium-length hair, styled at Muse Studio" width="800" height="600" loading="lazy">
+            <figcaption class="gallery__caption">Honey Highlights</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal">
+            <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=800&auto=format&fit=crop" alt="Interior of Muse Studio Hair salon in Barcelona" width="800" height="600" loading="lazy">
+            <figcaption class="gallery__caption">Our Studio</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal">
+            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=800&auto=format&fit=crop" alt="Stylist applying balayage color at Muse Studio" width="800" height="600" loading="lazy">
+            <figcaption class="gallery__caption">The Craft</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal">
+            <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?q=80&w=800&auto=format&fit=crop" alt="Rich auburn full-color result on long straight hair" width="800" height="600" loading="lazy">
+            <figcaption class="gallery__caption">Auburn Full Color</figcaption>
+          </figure>
+
+          <figure class="gallery__item reveal">
+            <img src="https://images.unsplash.com/photo-1617896848219-5ec29f1d4c82?q=80&w=800&auto=format&fit=crop" alt="Soft blonde balayage with natural root shadow, loose waves" width="800" height="600" loading="lazy">
+            <figcaption class="gallery__caption">Soft Blonde Balayage</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="about" id="about" aria-label="About Muse Studio">
+      <div class="container about__inner">
+
+        <div class="about__image-wrap reveal">
+          <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200&auto=format&fit=crop" alt="Muse Studio Hair — Barcelona salon interior with natural light" width="600" height="750" loading="lazy">
+        </div>
+
+        <div class="about__content">
+          <span class="section-label reveal">Our Studio</span>
+          <h2 class="reveal">We ask before we cut.</h2>
+
+          <p class="reveal">Muse Studio opened in Barcelona in 2012. Our founder — a colorist who trained here and later spent several years working in London — kept noticing the same pattern: most color problems weren't caused by bad technique, they were caused by a skipped or rushed consultation. So she built a studio where that couldn't happen.</p>
+
+          <p class="reveal">The consultation isn't a box we tick. Before any color appointment, we look at your hair's history — previous chemical treatments, home color, damage — and ask what your week actually looks like. "Balayage" means something different for hair that gets washed every day than for hair that gets washed twice a week. We make sure we're talking about the same result before we mix anything.</p>
+
+          <p class="reveal">We're not interested in impressive before-and-after photos that your hair can't sustain. What we want is for your hair to look good when you wake up on a Thursday three months from now — not just on the day you walked out of here. If we think what you're asking for will cause damage, we'll tell you. And we'll show you what we think would actually work.</p>
+
+          <ul class="about__bullets" aria-label="Our differentiators">
+            <li class="about__bullet reveal">
+              <span class="about__bullet-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                  <path d="M3.75 9L7.5 12.75L14.25 5.25" stroke="#B08F5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              Every color appointment begins with a paid 30-minute consultation (deducted from service cost)
+            </li>
+            <li class="about__bullet reveal">
+              <span class="about__bullet-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                  <path d="M3.75 9L7.5 12.75L14.25 5.25" stroke="#B08F5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              We photograph your hair history — so the next colorist who sees you understands exactly what's been done
+            </li>
+            <li class="about__bullet reveal">
+              <span class="about__bullet-icon" aria-hidden="true">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+                  <path d="M3.75 9L7.5 12.75L14.25 5.25" stroke="#B08F5A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              We decline color requests we believe will damage your hair — and explain why
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== PROCESS ===== -->
+    <section class="process" id="process" aria-label="How it works">
+      <div class="container">
+        <div class="process__header reveal">
+          <h2>How it works</h2>
+          <p class="process__subtitle">Color appointments especially need a plan.</p>
+        </div>
+
+        <div class="process__steps">
+
+          <div class="process__step reveal">
+            <span class="process__num" aria-hidden="true">01</span>
+            <h3 class="process__step-title">Book online</h3>
+            <p class="process__step-desc">Reserve a consultation or service slot. Same-day bookings are rare — plan ahead.</p>
+          </div>
+
+          <div class="process__step reveal">
+            <span class="process__num" aria-hidden="true">02</span>
+            <h3 class="process__step-title">Color consultation</h3>
+            <p class="process__step-desc">We look at your hair, discuss your goal, and agree on what's achievable. No surprises.</p>
+          </div>
+
+          <div class="process__step reveal">
+            <span class="process__num" aria-hidden="true">03</span>
+            <h3 class="process__step-title">Treatment day</h3>
+            <p class="process__step-desc">Your appointment runs as planned. We don't rush the processing time.</p>
+          </div>
+
+          <div class="process__step reveal">
+            <span class="process__num" aria-hidden="true">04</span>
+            <h3 class="process__step-title">Maintenance plan</h3>
+            <p class="process__step-desc">You leave knowing exactly what to do at home and when to come back.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS ===== -->
+    <section class="testimonials" id="testimonials" aria-label="Client testimonials">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">What Clients Say</span>
+          <h2>12 years of trust</h2>
+        </div>
+
+        <div class="testimonials__grid">
+
+          <article class="testimonial-card reveal">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              "I came in with a corrective color situation — three stylists had already made it worse. Marcos spent 20 minutes looking at my hair before agreeing to take it on. Six months later it's the healthiest it's been in years."
+            </blockquote>
+            <cite class="testimonial-card__client">Nadia R. · Barcelona</cite>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              "I asked for platinum blonde. They told me it would take three sessions and explained what would happen to my hair if we rushed it. I respected that. Now I'm properly blonde and my hair isn't destroyed."
+            </blockquote>
+            <cite class="testimonial-card__client">Sophie H. · Sitges</cite>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <blockquote class="testimonial-card__quote">
+              "I've been getting my hair cut here for four years. They remember the last cut, they remember what worked and what didn't. It's the closest thing to having a stylist who actually knows your hair."
+            </blockquote>
+            <cite class="testimonial-card__client">Daniel F. · Barcelona</cite>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRICING ===== -->
+    <section class="pricing" id="pricing" aria-label="Pricing">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Pricing</span>
+          <h2>Honest pricing</h2>
+          <p class="pricing__note">Color pricing is based on hair length and density. We confirm exact cost during your consultation.</p>
+        </div>
+
+        <div class="pricing__grid">
+
+          <!-- Tier 1 -->
+          <article class="pricing-card reveal">
+            <h3 class="pricing-card__name">Cut &amp; Style</h3>
+            <div class="pricing-card__price">From <strong>€65</strong></div>
+            <ul class="pricing-card__features" aria-label="Cut and Style features">
+              <li>Wash, cut, and blow-dry</li>
+              <li>Consultation on length and shape</li>
+              <li>Finish with your styling products or ours</li>
+              <li>Hair type appropriate technique</li>
+              <li>60-minute appointment</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary pricing-card__cta">Book Cut &amp; Style</a>
+          </article>
+
+          <!-- Tier 2 — FEATURED -->
+          <article class="pricing-card pricing-card--featured reveal" aria-label="Featured: Color and Cut">
+            <span class="pricing-card__badge">Most Popular</span>
+            <h3 class="pricing-card__name">Color &amp; Cut</h3>
+            <div class="pricing-card__price">From <strong>€140</strong></div>
+            <ul class="pricing-card__features" aria-label="Color and Cut features">
+              <li>Color formulation consultation</li>
+              <li>Single-process color or highlights</li>
+              <li>Cut and blow-dry included</li>
+              <li>Written color record kept on file</li>
+              <li>Aftercare product recommendations</li>
+            </ul>
+            <a href="#contact" class="btn btn--brass-dark pricing-card__cta">Book Color &amp; Cut</a>
+          </article>
+
+          <!-- Tier 3 -->
+          <article class="pricing-card reveal">
+            <h3 class="pricing-card__name">Full Transformation</h3>
+            <div class="pricing-card__price">From <strong>€240</strong></div>
+            <ul class="pricing-card__features" aria-label="Full Transformation features">
+              <li>Balayage or multi-process color</li>
+              <li>Color consultation session included</li>
+              <li>Cut and styling finish</li>
+              <li>Take-home maintenance guide</li>
+              <li>Complimentary toning at 6 weeks</li>
+            </ul>
+            <a href="#contact" class="btn btn--primary pricing-card__cta">Book Transformation</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT & BOOKING ===== -->
+    <section class="contact" id="contact" aria-label="Book your consultation">
+      <div class="container contact__inner">
+
+        <div class="contact__info">
+          <span class="section-label reveal">Book Your Consultation</span>
+          <h2 class="reveal">Reserve your appointment</h2>
+
+          <address class="contact__details reveal">
+            <div class="contact__detail">
+              <svg class="contact__detail-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path d="M9 1.5C6.51 1.5 4.5 3.51 4.5 6C4.5 9.375 9 16.5 9 16.5C9 16.5 13.5 9.375 13.5 6C13.5 3.51 11.49 1.5 9 1.5ZM9 7.875C7.965 7.875 7.125 7.035 7.125 6C7.125 4.965 7.965 4.125 9 4.125C10.035 4.125 10.875 4.965 10.875 6C10.875 7.035 10.035 7.875 9 7.875Z" fill="#B08F5A"/>
+              </svg>
+              <span>Carrer de Provença 211, 08008 Barcelona, Spain</span>
+            </div>
+            <div class="contact__detail">
+              <svg class="contact__detail-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path d="M9 1.5C4.86 1.5 1.5 4.86 1.5 9C1.5 13.14 4.86 16.5 9 16.5C13.14 16.5 16.5 13.14 16.5 9C16.5 4.86 13.14 1.5 9 1.5ZM9.75 13.5H8.25V8.25H9.75V13.5ZM9.75 6.75H8.25V5.25H9.75V6.75Z" fill="#B08F5A"/>
+              </svg>
+              <span>Monday–Saturday · 9:00–19:00</span>
+            </div>
+            <div class="contact__detail">
+              <svg class="contact__detail-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <path d="M3.375 2.25C3.375 2.25 2.25 2.25 2.25 3.375C2.25 4.5 2.25 7.875 6.75 12.375C11.25 16.875 14.625 16.875 15.75 16.875C16.875 16.875 16.875 15.75 16.875 15.75L16.875 13.125C16.875 13.125 16.875 12 15.75 12C15.75 12 14.4375 12 13.5 11.0625C13.5 11.0625 12.375 10.125 13.5 9C14.625 7.875 12.375 4.5 12.375 4.5C12.375 4.5 11.8125 3.375 10.6875 3.375C9.5625 3.375 9 4.5 9 4.5C8.25 5.25 6 3.375 3.375 2.25Z" fill="#B08F5A"/>
+              </svg>
+              <a href="tel:+34931234567" class="contact__link">+34 93 123 4567</a>
+            </div>
+            <div class="contact__detail">
+              <svg class="contact__detail-icon" width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                <rect x="2.25" y="2.25" width="13.5" height="13.5" rx="3.375" stroke="#B08F5A" stroke-width="1.5"/>
+                <circle cx="9" cy="9" r="2.625" stroke="#B08F5A" stroke-width="1.5"/>
+                <circle cx="13.125" cy="4.875" r="0.75" fill="#B08F5A"/>
+              </svg>
+              <a href="https://instagram.com/musestudiohair" class="contact__link" target="_blank" rel="noopener noreferrer">@musestudiohair</a>
+            </div>
+          </address>
+
+          <p class="contact__urgency reveal">Color appointments fill 2 weeks in advance. Book early to avoid waiting.</p>
+        </div>
+
+        <div class="contact__form-wrap">
+          <form id="booking-form" class="booking-form reveal" novalidate aria-label="Appointment request form">
+
+            <div class="form-field">
+              <label class="form-label" for="field-name">Your name <span class="form-required" aria-hidden="true">*</span></label>
+              <input
+                class="form-input"
+                type="text"
+                id="field-name"
+                name="name"
+                placeholder="Anna García"
+                required
+                autocomplete="name"
+                aria-required="true"
+              >
+              <span class="field-error" id="error-name" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="field-email">Email address <span class="form-required" aria-hidden="true">*</span></label>
+              <input
+                class="form-input"
+                type="email"
+                id="field-email"
+                name="email"
+                placeholder="anna@example.com"
+                required
+                autocomplete="email"
+                aria-required="true"
+              >
+              <span class="field-error" id="error-email" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="field-phone">Phone number <span class="form-required" aria-hidden="true">*</span></label>
+              <input
+                class="form-input"
+                type="tel"
+                id="field-phone"
+                name="phone"
+                placeholder="+34 612 345 678"
+                required
+                autocomplete="tel"
+                aria-required="true"
+              >
+              <span class="field-error" id="error-phone" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="field-service">Service of interest <span class="form-required" aria-hidden="true">*</span></label>
+              <select
+                class="form-input form-select"
+                id="field-service"
+                name="service"
+                required
+                aria-required="true"
+              >
+                <option value="" disabled selected>Select a service</option>
+                <option value="haircut-styling">Haircut &amp; Styling</option>
+                <option value="color-highlights">Color &amp; Highlights</option>
+                <option value="balayage">Balayage</option>
+                <option value="keratin-treatment">Keratin Treatment</option>
+                <option value="not-sure">Not sure — I'd like advice</option>
+              </select>
+              <span class="field-error" id="error-service" role="alert" aria-live="polite"></span>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="field-concern">Hair concern or goal <span class="form-optional">(optional)</span></label>
+              <textarea
+                class="form-input form-textarea"
+                id="field-concern"
+                name="concern"
+                rows="3"
+                placeholder="e.g. I want balayage but I'd like to keep some warmth. My hair is color-treated."
+              ></textarea>
+            </div>
+
+            <div class="form-field">
+              <label class="form-label" for="field-message">Anything else? <span class="form-optional">(optional)</span></label>
+              <textarea
+                class="form-input form-textarea"
+                id="field-message"
+                name="message"
+                rows="3"
+                placeholder="e.g. I've never had professional color before"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary form-submit">Request Appointment</button>
+
+            <div id="form-success" hidden role="status" tabindex="-1" class="form-feedback form-feedback--success">
+              Your request is received. We'll be in touch within one business day.
+            </div>
+
+            <div id="form-error" hidden role="alert" class="form-feedback form-feedback--error">
+              Something went wrong. Please try again or call us directly.
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer" aria-label="Site footer">
+    <div class="container footer__inner">
+
+      <div class="footer__brand">
+        <span class="footer__logo">Muse Studio</span>
+        <span class="footer__tagline">Hair · Barcelona</span>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer navigation">
+        <ul class="footer__nav-list">
+          <li><a class="footer__nav-link" href="#services">Services</a></li>
+          <li><a class="footer__nav-link" href="#gallery">Gallery</a></li>
+          <li><a class="footer__nav-link" href="#about">About</a></li>
+          <li><a class="footer__nav-link" href="#pricing">Pricing</a></li>
+          <li><a class="footer__nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__legal">
+        <p class="footer__copyright">© 2024 Muse Studio Hair. All rights reserved.</p>
+        <p class="footer__credit">Demo site by <a href="https://risesitelab.com" class="footer__credit-link" target="_blank" rel="noopener noreferrer">GrowthSite Lab · risesitelab.com</a></p>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
